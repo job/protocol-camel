@@ -2,7 +2,11 @@
 Goal is to get a place where we can gather DNS relevant RFCs and drafts,
 including page numbers and number of 'MUST' and 'SHOULD' statements.
 
-Page is live on https://powerdns.org/dns-camel/
+Page is live on http://instituut.net/~job/bgp-camel/
+
+# Original README
+
+The origin camel viewer was created by Bert Hubert at https://github.com/ahuPowerDNS/protocol-camel
 
 ## How you can help
 In various ways:
