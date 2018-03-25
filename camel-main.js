@@ -102,7 +102,7 @@ function updateTable()
     
     tabulate(arr, ["docID", "title", "pages", "currentStatus", "obsoleted"]);
     
-    d3.select("#main").text("There are "+rfclist.length+" RFCs, of which "+Object.keys(dnsrfcentries).length + " are relevant to DNS, of which "+arr.length+" are selected by filter. Total pages selected: "+totalPages);
+    d3.select("#main").text("There are "+rfclist.length+" RFCs, of which "+Object.keys(dnsrfcentries).length + " are relevant to BGP-4, of which "+arr.length+" are selected by filter. Total pages selected: "+totalPages);
 
 }
 
@@ -110,8 +110,8 @@ d3.xml("ext/rfc-index.xml", {cache: "force-cache"}).then(function(xml) {
     rfclist= xml.documentElement.getElementsByTagName("rfc-entry");
 
     var idx={};
-    for(var i = 0 ; i < dnsrfcs.length; i++) {
-        idx[dnsrfcs[i].toUpperCase()]=1;
+    for(var i = 0 ; i < bgprfcs.length; i++) {
+        idx[bgprfcs[i].toUpperCase()]=1;
     }
 
 
